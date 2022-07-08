@@ -6,7 +6,6 @@ import Pantalla from "./componentes/Pantalla";
 import BotonLimpiar from "./componentes/BotonLimpiar";
 
 import { useState } from "react";
-import { evaluate } from "mathjs";
 
 function App() {
 
@@ -17,8 +16,6 @@ function App() {
   const limpiarPantalla = () => setInput('')
 
   const calcularResultado = () => {
-
-    //console.log(eval(input));
     try {
       if (eval(input) === undefined) {
         alert("Introduzaca un valor valido")
